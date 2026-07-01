@@ -1,20 +1,10 @@
-# Hivel Notion Database IDs
-# Keep this file updated if database IDs ever change.
-# The agent reads these at runtime — never hardcode IDs in CLAUDE.md.
+# Hivel Notion Database IDs — Reddit Watcher
+# Update NOTION_REDDIT_SIGNALS_DB once the new database is created.
 
 databases:
 
-  signal_inbox:
-    id: "36ffc7a5505f80fda57ef9fad332778e"
-    name: "Hivel Signal Inbox"
-    purpose: "Stores all classified signals from watcher runs"
-    source_types_accepted:
-      - reddit
-      - web_search
-      - rss
-
-  # Add content_drafts ID here once that database is created
-  # content_drafts:
-  #   id: "PASTE_ID_HERE"
-  #   name: "Hivel Content Drafts"
-  #   purpose: "Stores generated content drafts for Simran to review"
+  reddit_signals:
+    id: "PASTE_NEW_DB_ID_HERE"
+    name: "Hivel Reddit Signals"
+    purpose: "Stores Reddit signals from the daily watcher run"
+    note: "Neighboring database to Hivel Signal Inbox. Same parent page."
