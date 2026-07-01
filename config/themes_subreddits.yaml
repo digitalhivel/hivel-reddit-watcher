@@ -1,0 +1,110 @@
+# Hivel Reddit Watcher — Theme and Subreddit Config
+#
+# Each theme has:
+#   keywords:   4 keywords, rotated across runs (one per run)
+#               index 0 = midnight run, 1 = morning run, 2 = evening run
+#               index 3 is used on every 4th cycle
+#   subreddits: validated list — each one confirmed for volume and ICP fit
+#
+# Subreddit sizes (approximate, as of mid-2026):
+#   EngineeringManagers ~29K   — small, highest ICP match, must include always
+#   devops              ~350K  — high volume, high buyer intent
+#   ExperiencedDevs     ~400K  — senior engineers, strong signal quality
+#   managers            ~257K  — broader, good for management-angle themes
+#   cscareerquestions   ~1M+   — developer voice, use for DX and AI adoption only
+#   ProductManagement   ~150K  — PMs with tool budgets, good secondary signal
+#   LocalLLaMA          ~762K  — technical AI, use for token optimization only
+#   MachineLearning     ~3M    — research-heavy, use sparingly, low-medium ICP fit
+
+themes:
+
+  - name: "Engineering analytics"
+    keywords:
+      - "DORA metrics"
+      - "engineering metrics software teams"
+      - "software delivery performance"
+      - "developer productivity measurement"
+    subreddits:
+      - "EngineeringManagers"
+      - "devops"
+      - "managers"
+      - "ProductManagement"
+
+  - name: "AI ROI"
+    keywords:
+      - "AI ROI engineering"
+      - "measuring AI productivity"
+      - "AI investment returns software"
+      - "AI value measurement developers"
+    subreddits:
+      - "EngineeringManagers"
+      - "ExperiencedDevs"
+      - "MachineLearning"
+      - "managers"
+
+  - name: "Token optimization"
+    keywords:
+      - "LLM token cost reduction"
+      - "AI inference cost engineering"
+      - "token efficiency optimization"
+      - "reducing token usage production"
+    subreddits:
+      - "LocalLLaMA"
+      - "MachineLearning"
+      - "ExperiencedDevs"
+
+  - name: "Agentic workflows"
+    keywords:
+      - "agentic coding workflows"
+      - "AI agents software development"
+      - "autonomous AI developer tools"
+      - "multi-agent engineering productivity"
+    subreddits:
+      - "ExperiencedDevs"
+      - "devops"
+      - "MachineLearning"
+
+  - name: "Developer experience"
+    keywords:
+      - "developer experience improvement"
+      - "DevEx engineering teams"
+      - "developer satisfaction measurement"
+      - "engineering team culture productivity"
+    subreddits:
+      - "ExperiencedDevs"
+      - "cscareerquestions"
+      - "EngineeringManagers"
+      - "devops"
+
+  - name: "AI adoption"
+    keywords:
+      - "enterprise AI adoption engineering"
+      - "AI tool rollout developers"
+      - "AI skills gap software teams"
+      - "AI change management engineering"
+    subreddits:
+      - "EngineeringManagers"
+      - "ExperiencedDevs"
+      - "managers"
+      - "cscareerquestions"
+
+  - name: "Engineering productivity"
+    keywords:
+      - "engineering productivity metrics"
+      - "software delivery intelligence"
+      - "code quality measurement teams"
+      - "sprint velocity planning engineering"
+    subreddits:
+      - "EngineeringManagers"
+      - "devops"
+      - "ExperiencedDevs"
+      - "managers"
+
+# Search parameters applied to all themes
+search:
+  time_range: "week"
+  sort: "relevance"
+  max_posts_per_url: 10
+  fast_mode: false
+  include_nsfw: false
+  crawl_comments: false
