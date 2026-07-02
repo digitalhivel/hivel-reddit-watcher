@@ -80,7 +80,7 @@ Incorrect: .../r/r/EngineeringManagers/search/...
 Method: POST
 URL: https://api.apify.com/v2/acts/harshmaur~reddit-scraper/run-sync-get-dataset-items?token={APIFY_TOKEN}
 Content-Type: application/json
-Timeout: 120 seconds
+Timeout: 240 seconds
 
 Body:
 {
